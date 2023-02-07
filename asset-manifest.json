@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/another-time-logger/static/css/main.86ba0715.css",
+    "main.js": "/another-time-logger/static/js/main.2ff4c74f.js",
+    "static/js/787.cc29817c.chunk.js": "/another-time-logger/static/js/787.cc29817c.chunk.js",
+    "index.html": "/another-time-logger/index.html",
+    "main.86ba0715.css.map": "/another-time-logger/static/css/main.86ba0715.css.map",
+    "main.2ff4c74f.js.map": "/another-time-logger/static/js/main.2ff4c74f.js.map",
+    "787.cc29817c.chunk.js.map": "/another-time-logger/static/js/787.cc29817c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86ba0715.css",
+    "static/js/main.2ff4c74f.js"
+  ]
+}
