@@ -81,28 +81,34 @@ const Form = () => {
       )}
       <div className="mt-6 flex items-center justify-between">
         <ul className="bg-gray-200 w-64 p-4 rounded-lg">
-          {items.map((item) => (
-            <li
-              key={item.id}
-              className="p-2 flex items-center justify-between border-b border-black"
-            >
-              {item.text}
-              <div className="flex gap-1">
-                <button
-                  onClick={() => handleEdit(item.id)}
-                  className="bg-gray-500 hover:bg-gray-600 p-2 rounded-lg"
-                >
-                  <FaEdit />
-                </button>
-                <button
-                  onClick={() => handleDelete(item.id)}
-                  className="bg-red-400 hover:bg-red-500 p-2 rounded-lg"
-                >
-                  <FaTrash />
-                </button>
-              </div>
+          {items.length === 0 ? (
+            <li className="p-2 flex items-center justify-between border-b border-black">
+              Start by adding a new task!
             </li>
-          ))}
+          ) : (
+            items.map((item) => (
+              <li
+                key={item.id}
+                className="p-2 flex items-center justify-between border-b border-black"
+              >
+                {item.text}
+                <div className="flex gap-1">
+                  <button
+                    onClick={() => handleEdit(item.id)}
+                    className="bg-gray-500 hover:bg-gray-600 p-2 rounded-lg"
+                  >
+                    <FaEdit />
+                  </button>
+                  <button
+                    onClick={() => handleDelete(item.id)}
+                    className="bg-red-400 hover:bg-red-500 p-2 rounded-lg"
+                  >
+                    <FaTrash />
+                  </button>
+                </div>
+              </li>
+            ))
+          )}
         </ul>
       </div>
     </div>
